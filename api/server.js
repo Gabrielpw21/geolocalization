@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 // Serve arquivos estáticos da pasta 'public'
-app.use(express.static('public'));
+app.use(express.static('../public'));
 
 // Armazenar localizações dos usuários
 let usersLocations = {};
